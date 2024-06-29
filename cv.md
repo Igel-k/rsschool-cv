@@ -66,8 +66,7 @@ def get_diagonal_code(grid):
 ```
 
 ## Experience
-I'm currently working on a closed project.
-There are no public pet projects yet.
+- [rsschool-cv](https://github.com/Igel-k/rsschool-cv/)
 
 ## Education
 - **University**: Bauman Moscow State Technical University, Apllied Mathematics (2018 -- 2024)
