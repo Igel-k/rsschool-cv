@@ -16,16 +16,53 @@ I am responsible, sociable, punctual, motivated and well organized. I can work b
 - Git
 
 ## Code example
-Python. Function of one of the tasks from the professional retraining course.
+Python. Task [Diagonal decode](https://www.codewars.com/kata/55af0d33f9b829d0a800008d/)
 
 ```python
-def mean_age(json_string):
-    values = json.loads(json_string)
-    res = 0
-    for value in values:
-        res += value.get('age')
-    res /= len(values)
-    return json.dumps({'mean_age': res})
+def get_diagonal_code(grid):
+    by_lines = list(grid.split("\n"))
+
+    by_letters = []
+    for line in by_lines:
+        by_letters.append(list(line.split(" ")))
+    
+    counter = 0
+    direction = 'to bot'
+    flag = False
+    result = []
+
+    current_lines = by_letters.copy()
+    
+    if len(current_lines) == 1:
+        return current_lines[0][0]
+
+    while not flag:
+        if direction == 'to bot':
+            for line in current_lines:
+                if len(line) > counter:
+                    result.append(line[counter])
+                    counter += 1
+                else:
+                    flag = True
+                    break
+            direction = 'to top'
+            current_lines = by_letters.copy()
+            current_lines.reverse()
+            del current_lines[0]
+        elif direction == 'to top':
+            for line in current_lines:
+                if len(line) > counter:
+                    res_string.append(line[counter])
+                    counter += 1
+                else:
+                    flag = True
+                    break
+            current_lines = by_letters.copy()
+            del current_lines[0]
+            direction = 'to bot'
+
+    res_string = ''.join(map(str, res_string))
+    return res_string
 ```
 
 ## Experience
