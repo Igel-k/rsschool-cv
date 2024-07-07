@@ -76,4 +76,3 @@ def get_diagonal_code(grid):
 - Russian: Native
 - English: Intermediate
 - German: Pre-Intermediate
-

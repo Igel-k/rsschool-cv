@@ -1,0 +1,185 @@
+:root {
+  --main-width: 1200px;
+  --small-width: 685px;
+  --main-color: #f0f4ff;
+}
+
+body {
+  width: var(--main-width);
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav {
+  position: fixed;
+  width: var(--main-width);
+  height: 70px;
+  top: 0;
+  background-color: var(--main-color);
+  z-index: 2;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li a:hover {
+  animation-name: underlinig;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main {
+  width: var(--main-width);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+li {
+  list-style-type: square;
+}
+
+li ul li {
+  list-style-type: none;
+}
+
+h1 {
+  margin-top: 90px;
+  width: 100%;
+}
+
+.content__right {
+  width: var(--small-width);
+  margin-top: -50px;
+}
+
+.content__right .content {
+  margin-left: -30px;
+}
+
+.content {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.content:hover {
+  border-radius: 20px;
+  animation-name: slide;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+footer {
+  display: flex;
+  width: var(--main-width);
+  height: 80px;
+  justify-content: space-evenly;
+  background-color: var(--main-color);
+  z-index: 2;
+}
+
+footer a,
+footer span {
+  margin-top: 20px;
+}
+
+@keyframes underlining {
+  from {
+    text-decoration: underline var(--main-color);
+  }
+  to {
+    text-decoration: underline black;
+  }
+}
+
+@keyframes slide {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: var(--main-color);
+  }
+  10% {
+    background-image: linear-gradient(to right, var(--main-color), white 11%);
+  }
+  20% {
+    background-image: linear-gradient(
+      to right,
+      var(--main-color),
+      var(--main-color) 11%,
+      white 22%
+    );
+  }
+  30% {
+    background-image: linear-gradient(
+      to right,
+      var(--main-color),
+      var(--main-color) 22%,
+      white 33%
+    );
+  }
+  40% {
+    background-image: linear-gradient(
+      to right,
+      var(--main-color),
+      var(--main-color) 33%,
+      white 44%
+    );
+  }
+  50% {
+    background-image: linear-gradient(
+      to right,
+      var(--main-color),
+      var(--main-color) 44%,
+      white 55%
+    );
+  }
+  60% {
+    background-image: linear-gradient(
+      to right,
+      var(--main-color),
+      var(--main-color) 55%,
+      white 66%
+    );
+  }
+  70% {
+    background-image: linear-gradient(
+      to right,
+      var(--main-color),
+      var(--main-color) 66%,
+      white 77%
+    );
+  }
+  80% {
+    background-image: linear-gradient(
+      to right,
+      var(--main-color),
+      var(--main-color) 77%,
+      white 88%
+    );
+  }
+  90% {
+    background-image: linear-gradient(
+      to right,
+      var(--main-color),
+      var(--main-color) 88%,
+      white 99%
+    );
+  }
+}
