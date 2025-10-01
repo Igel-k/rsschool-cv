@@ -7,3 +7,10 @@
 
 ## About me
 I am responsible, sociable, punctual, motivated and well organized. I can work both in a team and independently. I am constantly in search of new knowledge and skills. I am able to work under tight deadlines and meet deadlines.
+
+## Skills
+- C/C++, OpenMP, MPI
+- Python, Django
+- JavaScript, React
+- HTML, CSS
+- Git
