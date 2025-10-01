@@ -14,3 +14,15 @@ I am responsible, sociable, punctual, motivated and well organized. I can work b
 - JavaScript, React
 - HTML, CSS
 - Git
+
+## Experience
+- [rsschool-cv](https://github.com/Igel-k/rsschool-cv/)
+
+## Education
+- **University**: Bauman Moscow State Technical University, Apllied Mathematics (2018 -- 2024)
+- **Course**: Professional retraining course (BMSTU), Web-deveploment (2022 -- 2023)
+
+## Languages
+- Russian: Native
+- English: Intermediate
+- German: Pre-Intermediate
